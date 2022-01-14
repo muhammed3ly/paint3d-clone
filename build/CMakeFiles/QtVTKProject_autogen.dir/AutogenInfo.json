@@ -203,7 +203,15 @@
 	"CMAKE_SOURCE_DIR" : "D:/workspace/projects/paint3d-clone/paint3d-clone",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h",
+			"MU",
+			"6YEA5652QU/moc_MainWindow.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/include",
 	"INCLUDE_DIR_Debug" : "D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/include_Debug",
@@ -318,6 +326,11 @@
 	"SETTINGS_FILE_Release" : "D:/workspace/projects/paint3d-clone/paint3d-clone/build/CMakeFiles/QtVTKProject_autogen.dir/AutogenUsed_Release.txt",
 	"SOURCES" : 
 	[
+		[
+			"D:/workspace/projects/paint3d-clone/paint3d-clone/src/MainWindow.cpp",
+			"MU",
+			null
+		],
 		[
 			"D:/workspace/projects/paint3d-clone/paint3d-clone/src/main.cpp",
 			"MU",
