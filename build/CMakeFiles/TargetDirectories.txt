@@ -1,0 +1,3 @@
+D:/workspace/projects/paint3d-clone/paint3d-clone/build/CMakeFiles/QtVTKProject.dir
+D:/workspace/projects/paint3d-clone/paint3d-clone/build/CMakeFiles/ALL_BUILD.dir
+D:/workspace/projects/paint3d-clone/paint3d-clone/build/CMakeFiles/ZERO_CHECK.dir
