@@ -4,6 +4,9 @@
     <ClCompile Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\mocs_compilation_Debug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\workspace\projects\paint3d-clone\paint3d-clone\src\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\workspace\projects\paint3d-clone\paint3d-clone\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -18,9 +21,42 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="D:\workspace\projects\paint3d-clone\paint3d-clone\include\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\include_Debug\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\include_Release\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\include_MinSizeRel\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\include_RelWithDebInfo\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\CMakeFiles\aceb9520213a5f600b7e73d95f555f73\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
     <CustomBuild Include="D:\workspace\projects\paint3d-clone\paint3d-clone\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="D:\workspace\projects\paint3d-clone\paint3d-clone\forms\MainWindow.ui" />
+    <None Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\autouic_Debug.stamp" />
+    <None Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\autouic_Release.stamp" />
+    <None Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D0A50830-7444-3946-A445-4A8FBDEAF1F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{47E2B793-2A76-3461-B7F9-980F22CFF20A}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{99EF5CC4-04B8-3A8E-A85A-7313933293D3}</UniqueIdentifier>
     </Filter>
