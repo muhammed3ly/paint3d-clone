@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qglobal.h</FILENAME>
+      <LINE>660</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>qRound64</FUNCTION>
+    <DECORATED>?qRound64@@YA_JM@Z</DECORATED>
+    <FUNCLINE>659</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qglobal.h</FILENAME>
+      <LINE>660</LINE>
+      <COLUMN>70</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>qRound64</FUNCTION>
+    <DECORATED>?qRound64@@YA_JM@Z</DECORATED>
+    <FUNCLINE>659</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qglobal.h</FILENAME>
+      <LINE>660</LINE>
+      <COLUMN>49</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>qRound64</FUNCTION>
+    <DECORATED>?qRound64@@YA_JM@Z</DECORATED>
+    <FUNCLINE>659</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qglobal.h</FILENAME>
+      <LINE>660</LINE>
+      <COLUMN>88</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>qRound64</FUNCTION>
+    <DECORATED>?qRound64@@YA_JM@Z</DECORATED>
+    <FUNCLINE>659</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qmetatype.h</FILENAME>
+      <LINE>1173</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QtMetaTypePrivate::QSequentialIterableImpl::&lt;anonymous-tag&gt;::_moveTo' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QtMetaTypePrivate::QSequentialIterableImpl::{ctor}</FUNCTION>
+    <DECORATED>??0QSequentialIterableImpl@QtMetaTypePrivate@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1173</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qmetatype.h</FILENAME>
+      <LINE>1173</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QtMetaTypePrivate::QSequentialIterableImpl::&lt;anonymous-tag&gt;::_append' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QtMetaTypePrivate::QSequentialIterableImpl::{ctor}</FUNCTION>
+    <DECORATED>??0QSequentialIterableImpl@QtMetaTypePrivate@@QEAA@XZ</DECORATED>
+    <FUNCLINE>1173</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>265</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::CT::ahsv' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::CT::{ctor}</FUNCTION>
+    <DECORATED>??0CT@QColor@@QEAA@XZ</DECORATED>
+    <FUNCLINE>265</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>265</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::CT::array' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::CT::{ctor}</FUNCTION>
+    <DECORATED>??0CT@QColor@@QEAA@XZ</DECORATED>
+    <FUNCLINE>265</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>265</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::CT::argbExtended' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::CT::{ctor}</FUNCTION>
+    <DECORATED>??0CT@QColor@@QEAA@XZ</DECORATED>
+    <FUNCLINE>265</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>265</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::CT::argb' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::CT::{ctor}</FUNCTION>
+    <DECORATED>??0CT@QColor@@QEAA@XZ</DECORATED>
+    <FUNCLINE>265</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>265</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::CT::acmyk' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::CT::{ctor}</FUNCTION>
+    <DECORATED>??0CT@QColor@@QEAA@XZ</DECORATED>
+    <FUNCLINE>265</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>265</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::CT::ahsl' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::CT::{ctor}</FUNCTION>
+    <DECORATED>??0CT@QColor@@QEAA@XZ</DECORATED>
+    <FUNCLINE>265</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>321</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::cspec' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::{ctor}</FUNCTION>
+    <DECORATED>??0QColor@@QEAA@VQLatin1String@@@Z</DECORATED>
+    <FUNCLINE>321</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>324</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::cspec' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::{ctor}</FUNCTION>
+    <DECORATED>??0QColor@@QEAA@VQStringView@@@Z</DECORATED>
+    <FUNCLINE>324</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qcolor.h</FILENAME>
+      <LINE>328</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QColor::cspec' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QColor::{ctor}</FUNCTION>
+    <DECORATED>??0QColor@@QEAA@AEBVQString@@@Z</DECORATED>
+    <FUNCLINE>328</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_m12' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_dx' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_m11' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_m21' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_dy' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_m22' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_m12' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_dx' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_m11' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_m21' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_dy' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qmatrix.h</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QMatrix::_m22' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QMatrix::{ctor}</FUNCTION>
+    <DECORATED>??0QMatrix@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qsharedpointer_impl.h</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QtSharedPointer::ExternalRefCountData::strongref' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QtSharedPointer::ExternalRefCountData::{ctor}</FUNCTION>
+    <DECORATED>??0ExternalRefCountData@QtSharedPointer@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>146</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qsharedpointer_impl.h</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QtSharedPointer::ExternalRefCountData::weakref' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QtSharedPointer::ExternalRefCountData::{ctor}</FUNCTION>
+    <DECORATED>??0ExternalRefCountData@QtSharedPointer@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>146</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qsharedpointer_impl.h</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QtSharedPointer::ExternalRefCountData::destroyer' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QtSharedPointer::ExternalRefCountData::{ctor}</FUNCTION>
+    <DECORATED>??0ExternalRefCountData@QtSharedPointer@@QEAA@W4Initialization@Qt@@@Z</DECORATED>
+    <FUNCLINE>146</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtgui</FILEPATH>
+      <FILENAME>qpalette.h</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QPalette::&lt;anonymous-tag&gt;::for_faster_swapping_dont_use' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QPalette::{ctor}</FUNCTION>
+    <DECORATED>??0QPalette@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkobjectbase.h</FILENAME>
+      <LINE>292</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkObjectBase::IsInMemkind' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkObjectBase::{ctor}</FUNCTION>
+    <DECORATED>??0vtkObjectBase@@IEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>292</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkobjectbase.h</FILENAME>
+      <LINE>292</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkObjectBase::WeakPointers' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkObjectBase::{ctor}</FUNCTION>
+    <DECORATED>??0vtkObjectBase@@IEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>292</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkcommand.h</FILENAME>
+      <LINE>473</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkCommand::PassiveObserver' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkCommand::{ctor}</FUNCTION>
+    <DECORATED>??0vtkCommand@@IEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>473</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkcommand.h</FILENAME>
+      <LINE>473</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkCommand::AbortFlag' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkCommand::{ctor}</FUNCTION>
+    <DECORATED>??0vtkCommand@@IEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>473</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkvariantinlineoperators.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>6287</DEFECTCODE>
+    <DESCRIPTION>Redundant code:  the left and right sub-expressions are identical.</DESCRIPTION>
+    <FUNCTION>IsSigned64Bit</FUNCTION>
+    <DECORATED>?IsSigned64Bit@@YA_NH@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qlist.h</FILENAME>
+      <LINE>169</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QList&lt;QString&gt;::&lt;anonymous-tag&gt;::p' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QList&lt;QString&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$QList@VQString@@@@QEAA@V?$initializer_list@VQString@@@std@@@Z</DECORATED>
+    <FUNCLINE>169</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qlist.h</FILENAME>
+      <LINE>169</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QList&lt;QString&gt;::&lt;anonymous-tag&gt;::d' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QList&lt;QString&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$QList@VQString@@@@QEAA@V?$initializer_list@VQString@@@std@@@Z</DECORATED>
+    <FUNCLINE>169</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;unsigned char,4&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;unsigned char,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@E$03@@QEAA@PEBE@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;unsigned char,4&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;unsigned char,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@E$03@@QEAA@AEBE@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;unsigned char,3&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;unsigned char,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@E$02@@QEAA@PEBE@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;unsigned char,3&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;unsigned char,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@E$02@@QEAA@AEBE@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;float,4&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;float,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@M$03@@QEAA@PEBM@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;float,4&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;float,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@M$03@@QEAA@AEBM@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;double,4&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;double,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@N$03@@QEAA@PEBN@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;double,4&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;double,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@N$03@@QEAA@AEBN@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;double,3&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;double,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@N$02@@QEAA@PEBN@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;double,3&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;double,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@N$02@@QEAA@AEBN@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;float,3&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;float,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@M$02@@QEAA@PEBM@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;float,3&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;float,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@M$02@@QEAA@AEBM@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;int,4&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;int,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@H$03@@QEAA@PEBH@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;int,4&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;int,4&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@H$03@@QEAA@AEBH@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;int,3&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;int,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@H$02@@QEAA@PEBH@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;int,3&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;int,3&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@H$02@@QEAA@AEBH@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;double,2&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;double,2&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@N$01@@QEAA@PEBN@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;double,2&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;double,2&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@N$01@@QEAA@AEBN@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;float,2&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;float,2&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@M$01@@QEAA@PEBM@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;float,2&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;float,2&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@M$01@@QEAA@AEBM@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;int,2&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;int,2&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@H$01@@QEAA@PEBH@Z</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtktuple.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'vtkTuple&lt;int,2&gt;::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>vtkTuple&lt;int,2&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$vtkTuple@H$01@@QEAA@AEBH@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qstringview.h</FILENAME>
+      <LINE>210</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QStringView::m_data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QStringView::{ctor}</FUNCTION>
+    <DECORATED>??$?0VQString@@$00@QStringView@@QEAA@AEBVQString@@@Z</DECORATED>
+    <FUNCLINE>210</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qstringview.h</FILENAME>
+      <LINE>210</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QStringView::m_size' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QStringView::{ctor}</FUNCTION>
+    <DECORATED>??$?0VQString@@$00@QStringView@@QEAA@AEBVQString@@@Z</DECORATED>
+    <FUNCLINE>210</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qstringview.h</FILENAME>
+      <LINE>210</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QStringView::m_data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QStringView::{ctor}</FUNCTION>
+    <DECORATED>??$?0VQStringRef@@$00@QStringView@@QEAA@AEBVQStringRef@@@Z</DECORATED>
+    <FUNCLINE>210</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qstringview.h</FILENAME>
+      <LINE>210</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QStringView::m_size' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QStringView::{ctor}</FUNCTION>
+    <DECORATED>??$?0VQStringRef@@$00@QStringView@@QEAA@AEBVQStringRef@@@Z</DECORATED>
+    <FUNCLINE>210</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmath.h</FILENAME>
+      <LINE>1752</LINE>
+      <COLUMN>62</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>vtkDeterminant3x3</FUNCTION>
+    <DECORATED>??$vtkDeterminant3x3@M@@YANQEAY02$$CBM@Z</DECORATED>
+    <FUNCLINE>1749</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmath.h</FILENAME>
+      <LINE>1752</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>vtkDeterminant3x3</FUNCTION>
+    <DECORATED>??$vtkDeterminant3x3@M@@YANQEAY02$$CBM@Z</DECORATED>
+    <FUNCLINE>1749</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmath.h</FILENAME>
+      <LINE>1751</LINE>
+      <COLUMN>97</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>vtkDeterminant3x3</FUNCTION>
+    <DECORATED>??$vtkDeterminant3x3@M@@YANQEAY02$$CBM@Z</DECORATED>
+    <FUNCLINE>1749</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmath.h</FILENAME>
+      <LINE>1751</LINE>
+      <COLUMN>67</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>vtkDeterminant3x3</FUNCTION>
+    <DECORATED>??$vtkDeterminant3x3@M@@YANQEAY02$$CBM@Z</DECORATED>
+    <FUNCLINE>1749</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmath.h</FILENAME>
+      <LINE>1751</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>vtkDeterminant3x3</FUNCTION>
+    <DECORATED>??$vtkDeterminant3x3@M@@YANQEAY02$$CBM@Z</DECORATED>
+    <FUNCLINE>1749</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmath.h</FILENAME>
+      <LINE>1751</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>vtkDeterminant3x3</FUNCTION>
+    <DECORATED>??$vtkDeterminant3x3@M@@YANQEAY02$$CBM@Z</DECORATED>
+    <FUNCLINE>1749</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmath.h</FILENAME>
+      <LINE>1751</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>vtkDeterminant3x3</FUNCTION>
+    <DECORATED>??$vtkDeterminant3x3@M@@YANQEAY02$$CBM@Z</DECORATED>
+    <FUNCLINE>1749</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmatrixutilities.h</FILENAME>
+      <LINE>149</LINE>
+      <COLUMN>93</COLUMN>
+    </SFA>
+    <DEFECTCODE>6287</DEFECTCODE>
+    <DESCRIPTION>Redundant code:  the left and right sub-expressions are identical.</DESCRIPTION>
+    <FUNCTION>vtkMatrixUtilities::MatrixLayoutIs2D</FUNCTION>
+    <DECORATED>??$MatrixLayoutIs2D@PEAY02M@vtkMatrixUtilities@@YA_NXZ</DECORATED>
+    <FUNCLINE>137</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmatrixutilities.h</FILENAME>
+      <LINE>149</LINE>
+      <COLUMN>93</COLUMN>
+    </SFA>
+    <DEFECTCODE>6287</DEFECTCODE>
+    <DESCRIPTION>Redundant code:  the left and right sub-expressions are identical.</DESCRIPTION>
+    <FUNCTION>vtkMatrixUtilities::MatrixLayoutIs2D</FUNCTION>
+    <DECORATED>??$MatrixLayoutIs2D@PEAY02N@vtkMatrixUtilities@@YA_NXZ</DECORATED>
+    <FUNCLINE>137</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmatrixutilities.h</FILENAME>
+      <LINE>149</LINE>
+      <COLUMN>93</COLUMN>
+    </SFA>
+    <DEFECTCODE>6287</DEFECTCODE>
+    <DESCRIPTION>Redundant code:  the left and right sub-expressions are identical.</DESCRIPTION>
+    <FUNCTION>vtkMatrixUtilities::MatrixLayoutIs2D</FUNCTION>
+    <DECORATED>??$MatrixLayoutIs2D@PEAY02$$CBM@vtkMatrixUtilities@@YA_NXZ</DECORATED>
+    <FUNCLINE>137</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files\vtk\include\vtk-9.1</FILEPATH>
+      <FILENAME>vtkmatrixutilities.h</FILENAME>
+      <LINE>149</LINE>
+      <COLUMN>93</COLUMN>
+    </SFA>
+    <DEFECTCODE>6287</DEFECTCODE>
+    <DESCRIPTION>Redundant code:  the left and right sub-expressions are identical.</DESCRIPTION>
+    <FUNCTION>vtkMatrixUtilities::MatrixLayoutIs2D</FUNCTION>
+    <DECORATED>??$MatrixLayoutIs2D@PEAY02$$CBN@vtkMatrixUtilities@@YA_NXZ</DECORATED>
+    <FUNCLINE>137</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qlist.h</FILENAME>
+      <LINE>879</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QList&lt;QString&gt;::&lt;anonymous-tag&gt;::p' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QList&lt;QString&gt;::{ctor}</FUNCTION>
+    <DECORATED>??$?0PEBVQString@@$00@?$QList@VQString@@@@QEAA@PEBVQString@@0@Z</DECORATED>
+    <FUNCLINE>879</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\qt\5.15.2\msvc2019_64\include\qtcore</FILEPATH>
+      <FILENAME>qlist.h</FILENAME>
+      <LINE>879</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'QList&lt;QString&gt;::&lt;anonymous-tag&gt;::d' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>QList&lt;QString&gt;::{ctor}</FUNCTION>
+    <DECORATED>??$?0PEBVQString@@$00@?$QList@VQString@@@@QEAA@PEBVQString@@0@Z</DECORATED>
+    <FUNCLINE>879</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

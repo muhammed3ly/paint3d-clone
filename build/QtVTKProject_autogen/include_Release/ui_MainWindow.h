@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
@@ -33,6 +34,23 @@ public:
     QHBoxLayout *horizontalLayout_5;
     QVTKOpenGLWidget *openGLWidget_2;
     QVBoxLayout *verticalLayout_2;
+    QGroupBox *groupBox_3;
+    QVBoxLayout *verticalLayout_5;
+    QHBoxLayout *horizontalLayout_7;
+    QLabel *label_4;
+    QDoubleSpinBox *cameraX;
+    QHBoxLayout *horizontalLayout_8;
+    QLabel *label_5;
+    QDoubleSpinBox *cameraY;
+    QHBoxLayout *horizontalLayout_9;
+    QLabel *label_6;
+    QDoubleSpinBox *cameraZ;
+    QHBoxLayout *horizontalLayout_10;
+    QLabel *label_7;
+    QDoubleSpinBox *cameraAzimuth;
+    QHBoxLayout *horizontalLayout_11;
+    QLabel *label_8;
+    QDoubleSpinBox *cameraElevation;
     QGroupBox *groupBox;
     QHBoxLayout *horizontalLayout_4;
     QVBoxLayout *verticalLayout;
@@ -66,12 +84,13 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1190, 729);
+        MainWindow->resize(1190, 900);
         QSizePolicy sizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
         MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setMinimumSize(QSize(700, 900));
         QPalette palette;
         QBrush brush(QColor(0, 0, 0, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -200,6 +219,9 @@ public:
         sizePolicy2.setHeightForWidth(openGLWidget_2->sizePolicy().hasHeightForWidth());
         openGLWidget_2->setSizePolicy(sizePolicy2);
         openGLWidget_2->setMaximumSize(QSize(16777215, 16777215));
+        openGLWidget_2->setMouseTracking(true);
+        openGLWidget_2->setTabletTracking(true);
+        openGLWidget_2->setAcceptDrops(true);
         openGLWidget_2->setAutoFillBackground(true);
 
         horizontalLayout_5->addWidget(openGLWidget_2);
@@ -209,6 +231,104 @@ public:
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        groupBox_3 = new QGroupBox(centralwidget);
+        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
+        verticalLayout_5 = new QVBoxLayout(groupBox_3);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        label_4 = new QLabel(groupBox_3);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_7->addWidget(label_4);
+
+        cameraX = new QDoubleSpinBox(groupBox_3);
+        cameraX->setObjectName(QString::fromUtf8("cameraX"));
+        cameraX->setMinimum(-999.990000000000009);
+        cameraX->setMaximum(999.990000000000009);
+
+        horizontalLayout_7->addWidget(cameraX);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_7);
+
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        label_5 = new QLabel(groupBox_3);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_8->addWidget(label_5);
+
+        cameraY = new QDoubleSpinBox(groupBox_3);
+        cameraY->setObjectName(QString::fromUtf8("cameraY"));
+        cameraY->setMinimum(-999.990000000000009);
+        cameraY->setMaximum(999.990000000000009);
+
+        horizontalLayout_8->addWidget(cameraY);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_8);
+
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
+        label_6 = new QLabel(groupBox_3);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_9->addWidget(label_6);
+
+        cameraZ = new QDoubleSpinBox(groupBox_3);
+        cameraZ->setObjectName(QString::fromUtf8("cameraZ"));
+        cameraZ->setMinimum(-999.990000000000009);
+        cameraZ->setMaximum(999.990000000000009);
+        cameraZ->setValue(5.000000000000000);
+
+        horizontalLayout_9->addWidget(cameraZ);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_9);
+
+        horizontalLayout_10 = new QHBoxLayout();
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        label_7 = new QLabel(groupBox_3);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_10->addWidget(label_7);
+
+        cameraAzimuth = new QDoubleSpinBox(groupBox_3);
+        cameraAzimuth->setObjectName(QString::fromUtf8("cameraAzimuth"));
+        cameraAzimuth->setMinimum(-360.000000000000000);
+        cameraAzimuth->setMaximum(360.000000000000000);
+
+        horizontalLayout_10->addWidget(cameraAzimuth);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_10);
+
+        horizontalLayout_11 = new QHBoxLayout();
+        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        label_8 = new QLabel(groupBox_3);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_11->addWidget(label_8);
+
+        cameraElevation = new QDoubleSpinBox(groupBox_3);
+        cameraElevation->setObjectName(QString::fromUtf8("cameraElevation"));
+        cameraElevation->setMinimum(-360.000000000000000);
+        cameraElevation->setMaximum(360.000000000000000);
+
+        horizontalLayout_11->addWidget(cameraElevation);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_11);
+
+
+        verticalLayout_2->addWidget(groupBox_3);
+
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Minimum);
@@ -370,6 +490,12 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Paint3d Clone", nullptr));
+        groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "Camera Settings", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "x", nullptr));
+        label_5->setText(QCoreApplication::translate("MainWindow", "y", nullptr));
+        label_6->setText(QCoreApplication::translate("MainWindow", "z", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", "RotateH", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "RotateV", nullptr));
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "2D Shapes", nullptr));
         addCircleButton->setText(QCoreApplication::translate("MainWindow", "Circle", nullptr));
         addSquareButton->setText(QCoreApplication::translate("MainWindow", "Square", nullptr));
