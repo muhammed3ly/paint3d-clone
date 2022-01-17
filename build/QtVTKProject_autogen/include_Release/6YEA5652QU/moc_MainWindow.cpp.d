@@ -223,6 +223,7 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Qt/5.15.2/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QMainWindow \
+  C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QMessageBox.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qdialog.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qframe.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qinputdialog.h \
