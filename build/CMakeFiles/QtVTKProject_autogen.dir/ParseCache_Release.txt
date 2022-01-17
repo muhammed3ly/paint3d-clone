@@ -237,6 +237,6 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h
  mdp:C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgets-config.h
  mdp:C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qwidget.h
+D:/workspace/projects/paint3d-clone/paint3d-clone/src/main.cpp
 D:/workspace/projects/paint3d-clone/paint3d-clone/src/MainWindow.cpp
  uic:ui_MainWindow.h
-D:/workspace/projects/paint3d-clone/paint3d-clone/src/main.cpp
