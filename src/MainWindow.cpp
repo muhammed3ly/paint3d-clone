@@ -44,8 +44,6 @@ void MainWindow::InitializeBackground()
 {
 	mRenderer->GradientBackgroundOn();
 	vtkNew<vtkNamedColors> colors;
-	/*mRenderer->SetBackground(colors->GetColor3d("gray").GetData());
-	mRenderer->SetBackground2(colors->GetColor3d("white").GetData());*/
 
 	mRenderer->SetBackground(colors->GetColor3d("Banana").GetData());
 	mRenderer->SetBackground2(colors->GetColor3d("Tomato").GetData());
