@@ -16,8 +16,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 	organizingWindowDependecies();
 	InitializeBackground();
-	InitializeCameraSettings();
 	InitializeSlotsAndSignals();
+	InitializeCameraSettings();
 	updateColorBox();
 }
 
@@ -37,6 +37,7 @@ void MainWindow::InitializeSlotsAndSignals() {
 	QObject::connect(ui->cameraZ, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::updateCameraZ);
 	QObject::connect(ui->cameraAzimuth, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::updateCameraAzimuth);
 	QObject::connect(ui->cameraElevation, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::updateCameraElevation);
+	QObject::connect(ui->clearSpaceButton, &QPushButton::clicked, this, &MainWindow::newSketch);
 }
 
 void MainWindow::InitializeBackground()
@@ -60,6 +61,13 @@ void MainWindow::organizingWindowDependecies()
 	mInteractor->SetRenderWindow(mRenderWindow);
 	mInteractor->SetInteractorStyle(mInteractorStyle);
 	mInteractor->Initialize();
+}
+void MainWindow::newSketch()
+{
+	mRenderer->RemoveAllViewProps();
+	InitializeCameraSettings();
+	updateColorBox();
+	mRenderWindow->Render();
 }
 MainWindow::~MainWindow()
 {

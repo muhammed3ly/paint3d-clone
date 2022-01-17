@@ -25,6 +25,7 @@
 #include <vtkRegularPolygonSource.h>
 #include <vtkPolygon.h>
 #include <vtkInteractorStyleTrackballActor.h>
+#include <QMessageBox.h>
 #define NewPtr(obj, class) vtkSmartPointer<class> obj = vtkSmartPointer<class>::New()
 
 using namespace std;
@@ -50,6 +51,7 @@ private:
 	void InitializeBackground();
 	void InitializeCameraSettings();
 	void organizingWindowDependecies();
+	void newSketch();
 public:
 	void addCube();
 	void addSphere();
