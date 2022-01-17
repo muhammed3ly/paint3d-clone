@@ -1,6 +1,5 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
-#include <qdebug.h>
 
 
 
@@ -20,7 +19,6 @@ MainWindow::MainWindow(QWidget *parent) :
 	InitializeCameraSettings();
 	InitializeSlotsAndSignals();
 	updateColorBox();
-	qDebug() << "hello";
 }
 
 void MainWindow::InitializeSlotsAndSignals() {
@@ -63,7 +61,6 @@ void MainWindow::organizingWindowDependecies()
 	mInteractor->SetInteractorStyle(mInteractorStyle);
 	mInteractor->Initialize();
 }
-
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -136,6 +133,7 @@ void MainWindow::addCube() {
 		cube->SetZLength(valuesNeeded["z"]);
 		cube->Update();
 		cubeMapper->SetInputData(cube->GetOutput());
+		cubeMapper->ScalarVisibilityOff();
 		cubeActor->SetMapper(cubeMapper);
 		cubeActor->GetProperty()->SetColor(selectedRGB());
 		mRenderer->AddActor(cubeActor);

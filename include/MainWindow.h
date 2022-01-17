@@ -11,11 +11,8 @@
 #include <vtkNamedColors.h>
 #include <unordered_map>
 #include <vtkCamera.h>
-#include <vtkCellArray.h>
-#include <vtkFloatArray.h>
 #include <vtkActor.h>
 #include <vtkNamedColors.h>
-#include <vtkNew.h>
 #include <vtkPointData.h>
 #include <vtkPoints.h>
 #include <vtkPolyData.h>
@@ -23,16 +20,11 @@
 #include <vtkCamera.h>
 #include <vtkProperty.h>
 #include <vtkSphereSource.h>
-#include <vtkGlyph3D.h>
-#include <vtkAxesActor.h>
-#include <vtkOrientationMarkerWidget.h>
 #include <vtkCubeSource.h>
 #include <vtkConeSource.h>
 #include <vtkRegularPolygonSource.h>
 #include <vtkPolygon.h>
 #include <vtkInteractorStyleTrackballActor.h>
-#include <vtkBoxWidget.h>
-#include <vtkMyCallback.h>
 #define NewPtr(obj, class) vtkSmartPointer<class> obj = vtkSmartPointer<class>::New()
 
 using namespace std;

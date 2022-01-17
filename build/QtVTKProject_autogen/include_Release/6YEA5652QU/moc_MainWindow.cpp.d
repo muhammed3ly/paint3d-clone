@@ -1,24 +1,19 @@
 D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/include_Release/6YEA5652QU/moc_MainWindow.cpp: D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h \
   C:/Program\ Files/VTK/include/vtk-9.1/QVTKInteractor.h \
   C:/Program\ Files/VTK/include/vtk-9.1/QVTKWin32Header.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtk3DWidget.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkABI.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAOSDataArrayTemplate.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractArray.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractCellLinks.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractMapper.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractMapper3D.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractTransform.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkActor.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkActorCollection.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAlgorithm.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAssume.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkAxesActor.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkBoundingBox.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkBoxWidget.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkBuffer.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkBuild.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkCallbackCommand.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkCamera.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkCell.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkCellArray.h \
@@ -32,8 +27,6 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkCommonCoreModule.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkCommonDataModelModule.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkCommonExecutionModelModule.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkCommonMathModule.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkCommonTransformsModule.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkCompiler.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkConeSource.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkCubeSource.h \
@@ -57,33 +50,26 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkFieldData.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkFiltersCoreModule.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkFiltersSourcesModule.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkFloatArray.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkGUISupportQtModule.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkGenericCell.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkGenericDataArray.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkGenericDataArray.txx \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkGenericDataArrayLookupHelper.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkGenericOpenGLRenderWindow.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkGlyph3D.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkHomogeneousTransform.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkIOStream.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkIdList.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkIdTypeArray.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkIndent.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkIntArray.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractionStyleModule.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractionWidgetsModule.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractorObserver.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractorStyle.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractorStyleTrackballActor.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractorStyleTrackballCamera.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkLegacy.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkLinearTransform.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMapper.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMath.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMathConfigure.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMathPrivate.hxx \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkMatrix4x4.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMatrixUtilities.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMeta.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkNamedColors.h \
@@ -95,7 +81,6 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkObjectFactory.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkOpenGLRenderWindow.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkOptions.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkOrientationMarkerWidget.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkPlatform.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkPointData.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkPointSet.h \
@@ -114,7 +99,6 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRenderWindow.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRenderWindowInteractor.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRenderer.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkRenderingAnnotationModule.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRenderingCoreModule.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRenderingOpenGL2Module.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRenderingUIModule.h \
@@ -127,7 +111,6 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkSystemIncludes.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkTDxConfigure.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkTimeStamp.h \
-  C:/Program\ Files/VTK/include/vtk-9.1/vtkTransform.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkTuple.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkType.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkTypeInt32Array.h \
@@ -249,5 +232,4 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qwidget.h \
-  D:/workspace/projects/paint3d-clone/paint3d-clone/build/vtkMyCallback.h
+  C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qwidget.h
