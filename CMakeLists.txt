@@ -17,7 +17,7 @@ find_package(Qt5Widgets REQUIRED)
 #======================= INCLUSION OF VTK ======================#
 set(VTK_DIR $ENV{VTK_DIR})
 find_package(VTK REQUIRED)
-include(${VTK_USE_FILE})
+#include(${VTK_USE_FILE})#
 
 #======================= INCLUSION OF Our Code ======================#
 set(FORMS_DIR "${CMAKE_SOURCE_DIR}/forms")

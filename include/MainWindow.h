@@ -30,8 +30,9 @@
 #include <vtkConeSource.h>
 #include <vtkRegularPolygonSource.h>
 #include <vtkPolygon.h>
-#include <vtkInteractorStyleTrackballCamera.h>
-
+#include <vtkInteractorStyleTrackballActor.h>
+#include <vtkBoxWidget.h>
+#include <vtkMyCallback.h>
 #define NewPtr(obj, class) vtkSmartPointer<class> obj = vtkSmartPointer<class>::New()
 
 using namespace std;

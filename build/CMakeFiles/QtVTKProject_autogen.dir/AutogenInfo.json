@@ -197,8 +197,7 @@
 		"C:/Program Files/VTK/lib/cmake/vtk-9.1/vtkEncodeString.cmake",
 		"C:/Program Files/VTK/lib/cmake/vtk-9.1/vtkHashSource.cmake",
 		"C:/Program Files/VTK/lib/cmake/vtk-9.1/vtkObjectFactory.cmake",
-		"C:/Program Files/VTK/lib/cmake/vtk-9.1/vtkModuleJson.cmake",
-		"C:/Program Files/VTK/lib/cmake/vtk-9.1/vtk-use-file-deprecated.cmake"
+		"C:/Program Files/VTK/lib/cmake/vtk-9.1/vtkModuleJson.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/workspace/projects/paint3d-clone/paint3d-clone",
 	"DEP_FILE" : "",

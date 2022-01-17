@@ -1,0 +1,8 @@
+﻿  Automatic MOC and UIC for target QtVTKProject
+  Building Custom Rule D:/workspace/projects/paint3d-clone/paint3d-clone/CMakeLists.txt
+  mocs_compilation_Debug.cpp
+  vtkMyCallback.cpp
+  MainWindow.cpp
+  main.cpp
+  Generating Code...
+  QtVTKProject.vcxproj -> D:\workspace\projects\paint3d-clone\paint3d-clone\build\Debug\QtVTKProject.exe

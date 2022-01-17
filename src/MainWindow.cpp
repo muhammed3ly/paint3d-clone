@@ -1,6 +1,6 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
-
+#include <qdebug.h>
 
 
 
@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	mRenderWindow(vtkSmartPointer<vtkGenericOpenGLRenderWindow>::New()),
 	mRenderer(vtkSmartPointer<vtkRenderer>::New()),
 	mInteractor(vtkSmartPointer<QVTKInteractor>::New()),
-	mInteractorStyle(vtkSmartPointer<vtkInteractorStyleTrackballCamera>::New())
+	mInteractorStyle(vtkSmartPointer<vtkInteractorStyleTrackballActor>::New())
 {
     ui->setupUi(this);
 	organizingWindowDependecies();
@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	InitializeCameraSettings();
 	InitializeSlotsAndSignals();
 	updateColorBox();
+	qDebug() << "hello";
 }
 
 void MainWindow::InitializeSlotsAndSignals() {
@@ -56,9 +57,10 @@ void MainWindow::InitializeCameraSettings()
 
 void MainWindow::organizingWindowDependecies()
 {
-	mRenderWindow->AddRenderer(mRenderer);
-	mRenderWindow->SetInteractor(mInteractor);
 	ui->openGLWidget_2->setRenderWindow(mRenderWindow);
+	mRenderWindow->AddRenderer(mRenderer);
+	//mRenderWindow->SetInteractor(mInteractor);
+	mInteractor->SetRenderWindow(mRenderWindow);
 	mInteractor->SetInteractorStyle(mInteractorStyle);
 	mInteractor->Initialize();
 }
@@ -156,6 +158,7 @@ void MainWindow::addCone() {
 	if (valuesAdded) {
 		cone->SetHeight(valuesNeeded["height"]);
 		cone->SetRadius(valuesNeeded["radius"]);
+		cone->SetCenter(5, 0, 0);
 		cone->Update();
 		coneMapper->SetInputData(cone->GetOutput());
 		coneActor->SetMapper(coneMapper);
