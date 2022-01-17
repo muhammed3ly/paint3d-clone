@@ -59,7 +59,6 @@ void MainWindow::organizingWindowDependecies()
 {
 	ui->openGLWidget_2->setRenderWindow(mRenderWindow);
 	mRenderWindow->AddRenderer(mRenderer);
-	//mRenderWindow->SetInteractor(mInteractor);
 	mInteractor->SetRenderWindow(mRenderWindow);
 	mInteractor->SetInteractorStyle(mInteractorStyle);
 	mInteractor->Initialize();
@@ -158,7 +157,6 @@ void MainWindow::addCone() {
 	if (valuesAdded) {
 		cone->SetHeight(valuesNeeded["height"]);
 		cone->SetRadius(valuesNeeded["radius"]);
-		cone->SetCenter(5, 0, 0);
 		cone->Update();
 		coneMapper->SetInputData(cone->GetOutput());
 		coneActor->SetMapper(coneMapper);

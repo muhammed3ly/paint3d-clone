@@ -219,6 +219,7 @@ public:
         sizePolicy2.setHeightForWidth(openGLWidget_2->sizePolicy().hasHeightForWidth());
         openGLWidget_2->setSizePolicy(sizePolicy2);
         openGLWidget_2->setMaximumSize(QSize(16777215, 16777215));
+        openGLWidget_2->setCursor(QCursor(Qt::OpenHandCursor));
         openGLWidget_2->setMouseTracking(true);
         openGLWidget_2->setTabletTracking(true);
         openGLWidget_2->setAcceptDrops(true);
