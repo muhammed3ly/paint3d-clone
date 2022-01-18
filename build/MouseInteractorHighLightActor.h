@@ -15,7 +15,13 @@
 #include <vtkSphereSource.h>
 #include <Shape.h>
 namespace  {
-	// Handle mouse events
+
+	///<summary>
+	///   <para>
+	///       Class name: MouseInteractorHighLightActor
+	///       Handle mouse interactions to select a particular actor
+	///   </para>
+	///</summary>
 	class MouseInteractorHighLightActor : public vtkInteractorStyleTrackballActor
 	{
 	public:
@@ -32,10 +38,12 @@ namespace  {
 			LastPickedActor = NULL;
 			LastPickedProperty = vtkProperty::New();
 		}
+		
 		virtual ~MouseInteractorHighLightActor()
 		{
 			LastPickedProperty->Delete();
 		}
+
 		virtual void OnLeftButtonDown() override
 		{
 			vtkNew<vtkNamedColors> colors;

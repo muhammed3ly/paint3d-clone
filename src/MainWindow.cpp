@@ -3,6 +3,17 @@
 
 double MainWindow::azimuth = 0;
 double MainWindow::elevation = 0;
+
+///<summary>
+///   <para>
+///       Constructor with Parameters for Class: MainWindow
+///   </para>
+///</summary>
+///<param name="*parent">
+///   <para>
+///       Type: QWidget
+///   </para>
+///</param>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow), 
@@ -19,6 +30,23 @@ MainWindow::MainWindow(QWidget *parent) :
 	updateColorBox();
 }
 
+///<summary>
+///   <para>
+///       Destructor for Class: MainWindow
+///   </para>
+///</summary>
+MainWindow::~MainWindow()
+{
+	clearShapesVector();
+	delete ui;
+}
+
+///<summary>
+///   <para>
+///       Function name: InitializeSlotsAndSignals
+///       Function is part of Class: MainWindow
+///   </para>
+///</summary>
 void MainWindow::InitializeSlotsAndSignals() {
 	QObject::connect(ui->redColorSlider, &QSlider::valueChanged, this, &MainWindow::updateColorBox);
 	QObject::connect(ui->greenColorSlider, &QSlider::valueChanged, this, &MainWindow::updateColorBox);
@@ -39,6 +67,12 @@ void MainWindow::InitializeSlotsAndSignals() {
 	QObject::connect(ui->deleteActor, &QPushButton::clicked, this, &MainWindow::deleteActor);
 }
 
+///<summary>
+///   <para>
+///       Function name: InitializeBackground
+///       Function is part of Class: MainWindow
+///   </para>
+///</summary>
 void MainWindow::InitializeBackground()
 {
 	mRenderer->GradientBackgroundOn();
@@ -47,12 +81,25 @@ void MainWindow::InitializeBackground()
 	mRenderer->SetBackground2(colors->GetColor3d("Tomato").GetData());
 }
 
+///<summary>
+///   <para>
+///       Function name: InitializeCameraSettings
+///       Function is part of Class: MainWindow
+///   </para>
+///</summary>
 void MainWindow::InitializeCameraSettings()
 {
+
 	mRenderer->GetActiveCamera()->SetPosition(0, 0, 5);
 	mRenderer->GetActiveCamera()->SetFocalPoint(0, 0, 0);
 }
 
+///<summary>
+///   <para>
+///       Function name: organizingWindowDependecies
+///       Function is part of Class: MainWindow
+///   </para>
+///</summary>
 void MainWindow::organizingWindowDependecies()
 {
 	selectedActor = new int;
@@ -67,7 +114,12 @@ void MainWindow::organizingWindowDependecies()
 	mInteractor->Initialize();
 }
 
-
+///<summary>
+///   <para>
+///       Function name: newSketch
+///       Function is part of Class: MainWindow
+///   </para>
+///</summary>
 void MainWindow::newSketch()
 {
 	mRenderer->RemoveAllViewProps();
@@ -77,6 +129,12 @@ void MainWindow::newSketch()
 	mRenderWindow->Render();
 }
 
+///<summary>
+///   <para>
+///       Function name: clearShapesVector
+///       Function is part of Class: MainWindow
+///   </para>
+///</summary>
 void MainWindow::clearShapesVector() {
 	for (int i = 0; i < shapes.size() ; i++) {
 		delete shapes[i];
@@ -84,6 +142,13 @@ void MainWindow::clearShapesVector() {
 	shapes.clear();
 }
 
+///<summary>
+///   <para>
+///       Function name: deleteActor
+///       Function is part of Class: MainWindow
+///       Deletes the selected (if any) actor from the scene
+///   </para>
+///</summary>
 void MainWindow::deleteActor()
 {
 	if (*selectedActor != -1) {
@@ -94,12 +159,13 @@ void MainWindow::deleteActor()
 	}
 }
 
-MainWindow::~MainWindow()
-{
-	clearShapesVector();
-    delete ui;
-}
-
+///<summary>
+///   <para>
+///       Function name: updatePosition
+///       Function is part of Class: MainWindow
+///       Update camera settings spinners
+///   </para>
+///</summary>
 void MainWindow::updatePosition() {
 	double* position = mRenderer->GetActiveCamera()->GetPosition();
 	ui->cameraX->setValue(position[0]);
@@ -107,24 +173,72 @@ void MainWindow::updatePosition() {
 	ui->cameraZ->setValue(position[2]);
 }
 
+///<summary>
+///   <para>
+///       Function name: updateCameraX
+///       Function is part of Class: MainWindow
+///       Add a given value to the camera in the Y-Axis
+///   </para>
+///</summary>
+///<param name="value">
+///   <para>
+///       Type: double
+///   </para>
+///</param>
 void MainWindow::updateCameraX(double value){
 	double* position = mRenderer->GetActiveCamera()->GetPosition();
 	mRenderer->GetActiveCamera()->SetPosition(value, position[1], position[2]);
 	mRenderWindow->Render();
 }
 
+///<summary>
+///   <para>
+///       Function name: updateCameraY
+///       Function is part of Class: MainWindow
+///       Add a given value to the camera in the Y-Axis
+///   </para>
+///</summary>
+///<param name="value">
+///   <para>
+///       Type: double
+///   </para>
+///</param>
 void MainWindow::updateCameraY(double value){
 	double* position = mRenderer->GetActiveCamera()->GetPosition();
 	mRenderer->GetActiveCamera()->SetPosition(position[0], value, position[2]);
 	mRenderWindow->Render();
 }
 
+///<summary>
+///   <para>
+///       Function name: updateCameraZ
+///       Function is part of Class: MainWindow
+///       Add a given value to the camera in the Z-Axis
+///   </para>
+///</summary>
+///<param name="value">
+///   <para>
+///       Type: double
+///   </para>
+///</param>
 void MainWindow::updateCameraZ(double value){
 	double* position = mRenderer->GetActiveCamera()->GetPosition();
 	mRenderer->GetActiveCamera()->SetPosition(position[0], position[1], value);
 	mRenderWindow->Render();
 }
 
+///<summary>
+///   <para>
+///       Function name: updateCameraAzimuth
+///       Function is part of Class: MainWindow
+///       Rotate the camera about the view up vector centered at the focal point
+///   </para>
+///</summary>
+///<param name="value">
+///   <para>
+///       Type: double
+///   </para>
+///</param>
 void MainWindow::updateCameraAzimuth(double value){
 	mRenderer->GetActiveCamera()->Azimuth(-azimuth);
 	mRenderer->GetActiveCamera()->Azimuth(value);
@@ -133,6 +247,19 @@ void MainWindow::updateCameraAzimuth(double value){
 	mRenderWindow->Render();
 }
 
+///<summary>
+///   <para>
+///       Function name: updateCameraElevation
+///       Function is part of Class: MainWindow
+///       Rotate the camera about the cross product of the negative of the direction of projection 
+///		  and the view up vector, using the focal point as the center of rotation
+///   </para>
+///</summary>
+///<param name="value">
+///   <para>
+///       Type: double
+///   </para>
+///</param>
 void MainWindow::updateCameraElevation(double value){
 	mRenderer->GetActiveCamera()->Elevation(-elevation);
 	mRenderer->GetActiveCamera()->Elevation(value);
@@ -141,6 +268,13 @@ void MainWindow::updateCameraElevation(double value){
 	mRenderWindow->Render();
 }
 
+///<summary>
+///   <para>
+///       Function name: updateColorBox
+///       Function is part of Class: MainWindow
+///       Update the value of the color box to show in which color the next object will be rendered
+///   </para>
+///</summary>
 void MainWindow::updateColorBox() {
 	double* rgb = selectedRGB(false);
 	QString* rgbTxt = new QString[3];
@@ -155,6 +289,21 @@ void MainWindow::updateColorBox() {
 	delete[] rgbTxt;
 }
 
+///<summary>
+///   <para>
+///       Function name: selectedRGB
+///       Function is part of Class: MainWindow
+///       extract the RGB values from sliders and return it normalized or not normalized
+///   </para>
+///</summary>
+///<param name="normalize">
+///   <para>
+///       Type: bool
+///   </para>
+///</param>
+///<returns>
+///    Pointer of type: double*
+///</returns>
 double* MainWindow::selectedRGB(bool normalize = true) {
 	double don = normalize ? 255 : 1;
 	return new double[3]{ ui->redColorSlider->value() / don,
@@ -162,6 +311,13 @@ double* MainWindow::selectedRGB(bool normalize = true) {
 		ui->blueColorSlider->value() / don };
 }
 
+///<summary>
+///   <para>
+///       Function name: addCube
+///       Function is part of Class: MainWindow
+///       Add cube actor to the scene
+///   </para>
+///</summary>
 void MainWindow::addCube() {
 	Shape* cube = new Cube();
 	NewPtr(cubeSource, vtkCubeSource);
@@ -179,11 +335,16 @@ void MainWindow::addCube() {
 		updatePosition();
 		shapes.push_back(cube);
 		mRenderWindow->Render();
-
-
 	}
 }
 
+///<summary>
+///   <para>
+///       Function name: addCone
+///       Function is part of Class: MainWindow
+///       Add cone actor to the scene
+///   </para>
+///</summary>
 void MainWindow::addCone() {
 	Shape* cone = new Cone();
 	NewPtr(coneSource, vtkConeSource);
@@ -203,6 +364,13 @@ void MainWindow::addCone() {
 	}
 }
 
+///<summary>
+///   <para>
+///       Function name: addSphere
+///       Function is part of Class: MainWindow
+///       Add sphere actor to the scene
+///   </para>
+///</summary>
 void MainWindow::addSphere() {
 	Shape* sphere = new Sphere();
 	NewPtr(sphereSource, vtkSphereSource);
@@ -221,6 +389,13 @@ void MainWindow::addSphere() {
 	}
 }
 
+///<summary>
+///   <para>
+///       Function name: addCircle
+///       Function is part of Class: MainWindow
+///       Add circle actor to the scene
+///   </para>
+///</summary>
 void MainWindow::addCircle() {
 	Shape* circle = new Circle();
 	NewPtr(polygonSource, vtkRegularPolygonSource);
@@ -238,6 +413,13 @@ void MainWindow::addCircle() {
 	}
 }
 
+///<summary>
+///   <para>
+///       Function name: addSquare
+///       Function is part of Class: MainWindow
+///       Add square actor to the scene
+///   </para>
+///</summary>
 void MainWindow::addSquare() {
 	Shape* square = new Square();
 	NewPtr(points, vtkPoints);
@@ -269,6 +451,13 @@ void MainWindow::addSquare() {
 	}
 }
 
+///<summary>
+///   <para>
+///       Function name: addRectangle
+///       Function is part of Class: MainWindow
+///       Add rectangle actor to the scene
+///   </para>
+///</summary>
 void MainWindow::addRectangle() {
 	Shape* rectangle = new MRectangle();
 	NewPtr(points, vtkPoints);
@@ -299,6 +488,13 @@ void MainWindow::addRectangle() {
 	}
 }
 
+///<summary>
+///   <para>
+///       Function name: addTriangle
+///       Function is part of Class: MainWindow
+///       Add triangle actor to the scene
+///   </para>
+///</summary>
 void MainWindow::addTriangle() {
 	Shape* triangle = new Triangle();
 	NewPtr(points, vtkPoints);
@@ -314,7 +510,7 @@ void MainWindow::addTriangle() {
 		points->InsertNextPoint(side / 2, -side / 2, 0.0);
 
 		polygon->GetPointIds()->SetNumberOfIds(3);
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 3; i++) {
 			polygon->GetPointIds()->SetId(i, i);
 		}
 
@@ -331,6 +527,21 @@ void MainWindow::addTriangle() {
 	}
 }
 
+///<summary>
+///   <para>
+///       Function name: getData
+///       Function is part of Class: MainWindow
+///       Extract the data needed for rendering the actor and request it using QMessageBox(s) 
+///   </para>
+///</summary>
+///<param name="&dataNeeded">
+///   <para>
+///       Type: map<string, double*>
+///   </para>
+///</param>
+///<returns>
+///    Value of type: bool
+///</returns>
 bool MainWindow::getData(map<string, double*> &dataNeeded) {
 	bool ok;
 	for (auto &data : dataNeeded) {

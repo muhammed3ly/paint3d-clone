@@ -251,6 +251,6 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Sphere.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Square.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Triangle.h
+D:/workspace/projects/paint3d-clone/paint3d-clone/src/main.cpp
 D:/workspace/projects/paint3d-clone/paint3d-clone/src/MainWindow.cpp
  uic:ui_MainWindow.h
-D:/workspace/projects/paint3d-clone/paint3d-clone/src/main.cpp
