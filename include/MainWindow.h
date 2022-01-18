@@ -45,7 +45,7 @@ private:
 	vtkSmartPointer<QVTKInteractor> mInteractor;
 	vtkSmartPointer<vtkInteractorStyle> mInteractorStyle;
 	void updateColorBox();
-	double* selectedRGB();
+	void selectedRGB(int &r, int &g, int &b);
 	void updatePosition();
 	void InitializeSlotsAndSignals();
 	void InitializeBackground();

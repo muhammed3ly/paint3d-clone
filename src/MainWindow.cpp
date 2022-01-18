@@ -44,7 +44,6 @@ void MainWindow::InitializeBackground()
 {
 	mRenderer->GradientBackgroundOn();
 	vtkNew<vtkNamedColors> colors;
-
 	mRenderer->SetBackground(colors->GetColor3d("Banana").GetData());
 	mRenderer->SetBackground2(colors->GetColor3d("Tomato").GetData());
 }
@@ -63,6 +62,7 @@ void MainWindow::organizingWindowDependecies()
 	mInteractor->SetInteractorStyle(mInteractorStyle);
 	mInteractor->Initialize();
 }
+
 void MainWindow::newSketch()
 {
 	mRenderer->RemoveAllViewProps();
@@ -70,6 +70,7 @@ void MainWindow::newSketch()
 	updateColorBox();
 	mRenderWindow->Render();
 }
+
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -81,21 +82,25 @@ void MainWindow::updatePosition() {
 	ui->cameraY->setValue(position[1]);
 	ui->cameraZ->setValue(position[2]);
 }
+
 void MainWindow::updateCameraX(double value){
 	double* position = mRenderer->GetActiveCamera()->GetPosition();
 	mRenderer->GetActiveCamera()->SetPosition(value, position[1], position[2]);
 	mRenderWindow->Render();
 }
+
 void MainWindow::updateCameraY(double value){
 	double* position = mRenderer->GetActiveCamera()->GetPosition();
 	mRenderer->GetActiveCamera()->SetPosition(position[0], value, position[2]);
 	mRenderWindow->Render();
 }
+
 void MainWindow::updateCameraZ(double value){
 	double* position = mRenderer->GetActiveCamera()->GetPosition();
 	mRenderer->GetActiveCamera()->SetPosition(position[0], position[1], value);
 	mRenderWindow->Render();
 }
+
 void MainWindow::updateCameraAzimuth(double value){
 	mRenderer->GetActiveCamera()->Azimuth(-azimuth);
 	mRenderer->GetActiveCamera()->Azimuth(value);
@@ -103,6 +108,7 @@ void MainWindow::updateCameraAzimuth(double value){
 	updatePosition();
 	mRenderWindow->Render();
 }
+
 void MainWindow::updateCameraElevation(double value){
 	mRenderer->GetActiveCamera()->Elevation(-elevation);
 	mRenderer->GetActiveCamera()->Elevation(value);
@@ -113,18 +119,17 @@ void MainWindow::updateCameraElevation(double value){
 
 void MainWindow::updateColorBox() {
 	int r, g, b;
-	r = ui->redColorSlider->value();
-	g = ui->greenColorSlider->value();
-	b = ui->blueColorSlider->value();
+	selectedRGB(r, g, b);
 	ui->redValue->setText(QString::number(r));
 	ui->greenValue->setText(QString::number(g));
 	ui->blueValue->setText(QString::number(b));
 	ui->colorBox->setStyleSheet("background-color: rgb(" + QString::number(r) + "," + QString::number(g) + "," + QString::number(b) + " )");
 }
 
-double* MainWindow::selectedRGB() {
-	return new double[3]{ (double)ui->redColorSlider->value() 
-, (double)ui->greenColorSlider->value(), (double)ui->blueColorSlider->value() };
+void MainWindow::selectedRGB(int &r, int &g, int &b) {
+	r = ui->redColorSlider->value();
+	g = ui->greenColorSlider->value();
+	b = ui->blueColorSlider->value();
 }
 
 void MainWindow::addCube() {
@@ -144,7 +149,9 @@ void MainWindow::addCube() {
 		cubeMapper->SetInputData(cube->GetOutput());
 		cubeMapper->ScalarVisibilityOff();
 		cubeActor->SetMapper(cubeMapper);
-		cubeActor->GetProperty()->SetColor(selectedRGB());
+		int r, g, b;
+		selectedRGB(r, g, b);
+		cubeActor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
 		mRenderer->AddActor(cubeActor);
 		mRenderer->ResetCamera();
 		updatePosition();
@@ -167,7 +174,9 @@ void MainWindow::addCone() {
 		cone->Update();
 		coneMapper->SetInputData(cone->GetOutput());
 		coneActor->SetMapper(coneMapper);
-		coneActor->GetProperty()->SetColor(selectedRGB());
+		int r, g, b;
+		selectedRGB(r, g, b);
+		coneActor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
 		mRenderer->AddActor(coneActor);
 		mRenderer->ResetCamera();
 		updatePosition();
@@ -188,7 +197,9 @@ void MainWindow::addSphere() {
 		sphereSource->Update();
 		sphereMapper->SetInputConnection(sphereSource->GetOutputPort());
 		sphereActor->SetMapper(sphereMapper);
-		sphereActor->GetProperty()->SetColor(selectedRGB());
+		int r, g, b;
+		selectedRGB(r, g, b);
+		sphereActor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
 		mRenderer->AddActor(sphereActor);
 		mRenderer->ResetCamera();
 		updatePosition();
@@ -210,7 +221,9 @@ void MainWindow::addCircle() {
 		polygonSource->SetRadius(valuesNeeded["radius"]);
 		mapper->SetInputConnection(polygonSource->GetOutputPort());
 		actor->SetMapper(mapper);
-		actor->GetProperty()->SetColor(selectedRGB());
+		int r, g, b;
+		selectedRGB(r, g, b);
+		actor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
 		mRenderer->AddActor(actor);
 		mRenderer->ResetCamera();
 		mRenderWindow->Render();
@@ -245,7 +258,9 @@ void MainWindow::addSquare() {
 		polygonPolyData->SetPolys(polygons);
 		mapper->SetInputData(polygonPolyData);
 		actor->SetMapper(mapper);
-		actor->GetProperty()->SetColor(selectedRGB());
+		int r, g, b;
+		selectedRGB(r, g, b);
+		actor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
 		mRenderer->AddActor(actor);
 		mRenderer->ResetCamera();
 		mRenderWindow->Render();
@@ -279,7 +294,9 @@ void MainWindow::addRectangle() {
 		polygonPolyData->SetPolys(polygons);
 		mapper->SetInputData(polygonPolyData);
 		actor->SetMapper(mapper);
-		actor->GetProperty()->SetColor(selectedRGB());
+		int r, g, b;
+		selectedRGB(r, g, b);
+		actor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
 		mRenderer->AddActor(actor);
 		mRenderer->ResetCamera();
 		mRenderWindow->Render();
@@ -315,7 +332,9 @@ void MainWindow::addTriangle() {
 		polygonPolyData->SetPolys(polygons);
 		mapper->SetInputData(polygonPolyData);
 		actor->SetMapper(mapper);
-		actor->GetProperty()->SetColor(selectedRGB());
+		int r, g, b;
+		selectedRGB(r, g, b);
+		actor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
 		mRenderer->AddActor(actor);
 		mRenderer->ResetCamera();
 		mRenderWindow->Render();
