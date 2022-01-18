@@ -1,6 +1,6 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle()
+MRectangle::MRectangle()
 {
 	valuesNeeded["length"] = nullptr;
 	valuesNeeded["width"] = nullptr;

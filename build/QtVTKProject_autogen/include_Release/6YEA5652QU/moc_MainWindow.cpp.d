@@ -233,4 +233,12 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qwidget.h
+  C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qwidget.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/Circle.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/Cone.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/Cube.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/Rectangle.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/Shape.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/Sphere.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/Square.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/Triangle.h

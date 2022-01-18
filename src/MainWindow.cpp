@@ -64,13 +64,22 @@ void MainWindow::organizingWindowDependecies()
 void MainWindow::newSketch()
 {
 	mRenderer->RemoveAllViewProps();
+	clearShapesVector();
 	InitializeCameraSettings();
 	updateColorBox();
 	mRenderWindow->Render();
 }
 
+void MainWindow::clearShapesVector() {
+	for (int i = 0; i < shapes.size() ; i++) {
+		delete shapes[i];
+	}
+	shapes.clear();
+}
+
 MainWindow::~MainWindow()
 {
+	clearShapesVector();
     delete ui;
 }
 
@@ -116,130 +125,109 @@ void MainWindow::updateCameraElevation(double value){
 }
 
 void MainWindow::updateColorBox() {
-	int r, g, b;
-	selectedRGB(r, g, b);
-	ui->redValue->setText(QString::number(r));
-	ui->greenValue->setText(QString::number(g));
-	ui->blueValue->setText(QString::number(b));
-	ui->colorBox->setStyleSheet("background-color: rgb(" + QString::number(r) + "," + QString::number(g) + "," + QString::number(b) + " )");
+	double* rgb = selectedRGB(false);
+	QString* rgbTxt = new QString[3];
+	for (int i = 0; i < 3; i++) {
+		rgbTxt[i] = QString::number(rgb[i]);
+	}
+	ui->redValue->setText(rgbTxt[0]);
+	ui->greenValue->setText(rgbTxt[1]);
+	ui->blueValue->setText(rgbTxt[2]);
+	ui->colorBox->setStyleSheet("background-color: rgb(" + rgbTxt[0] + "," + rgbTxt[1] + "," + rgbTxt[2] + ")");
+	delete[] rgb;
+	delete[] rgbTxt;
 }
 
-void MainWindow::selectedRGB(int &r, int &g, int &b) {
-	r = ui->redColorSlider->value();
-	g = ui->greenColorSlider->value();
-	b = ui->blueColorSlider->value();
+double* MainWindow::selectedRGB(bool normalize = true) {
+	double don = normalize ? 255 : 1;
+	return new double[3]{ ui->redColorSlider->value() / don,
+		ui->greenColorSlider->value() / don,
+		ui->blueColorSlider->value() / don };
 }
 
 void MainWindow::addCube() {
-	NewPtr(cube, vtkCubeSource);
+	Shape* cube = new Cube();
+	NewPtr(cubeSource, vtkCubeSource);
 	NewPtr(cubeMapper, vtkPolyDataMapper);
-	NewPtr(cubeActor, vtkActor);
-	unordered_map<string, double> valuesNeeded;
-	valuesNeeded["x"] = 0;
-	valuesNeeded["y"] = 0;
-	valuesNeeded["z"] = 0;
-	bool valuesAdded = getData(valuesNeeded);
-	if (valuesAdded) {
-		cube->SetXLength(valuesNeeded["x"]);
-		cube->SetYLength(valuesNeeded["y"]);
-		cube->SetZLength(valuesNeeded["z"]);
-		cube->Update();
-		cubeMapper->SetInputData(cube->GetOutput());
-		cubeActor->SetMapper(cubeMapper);
-		int r, g, b;
-		selectedRGB(r, g, b);
-		cubeActor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
-		mRenderer->AddActor(cubeActor);
+	if (getData(cube->valuesNeeded)) {
+		cubeSource->SetXLength(*(cube->valuesNeeded["length"]));
+		cubeSource->SetYLength(*(cube->valuesNeeded["width"]));
+		cubeSource->SetZLength(*(cube->valuesNeeded["height"]));
+		cubeSource->Update();
+		cubeMapper->SetInputData(cubeSource->GetOutput());
+		cube->actor->SetMapper(cubeMapper);
+		cube->actor->GetProperty()->SetColor(selectedRGB());
+		mRenderer->AddActor(cube->actor);
 		mRenderer->ResetCamera();
 		updatePosition();
+		shapes.push_back(cube);
 		mRenderWindow->Render();
 	}
 }
 
 void MainWindow::addCone() {
-	NewPtr(cone, vtkConeSource);
+	Shape* cone = new Cone();
+	NewPtr(coneSource, vtkConeSource);
 	NewPtr(coneMapper, vtkPolyDataMapper);
-	NewPtr(coneActor, vtkActor);
-
-	unordered_map<string, double> valuesNeeded;
-	valuesNeeded["height"] = 0;
-	valuesNeeded["radius"] = 0;
-	bool valuesAdded = getData(valuesNeeded);
-	if (valuesAdded) {
-		cone->SetHeight(valuesNeeded["height"]);
-		cone->SetRadius(valuesNeeded["radius"]);
-		cone->Update();
-		coneMapper->SetInputData(cone->GetOutput());
-		coneActor->SetMapper(coneMapper);
-		int r, g, b;
-		selectedRGB(r, g, b);
-		coneActor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
-		mRenderer->AddActor(coneActor);
+	if (getData(cone->valuesNeeded)) {
+		coneSource->SetHeight(*(cone->valuesNeeded["height"]));
+		coneSource->SetRadius(*(cone->valuesNeeded["radius"]));
+		coneSource->Update();
+		coneMapper->SetInputData(coneSource->GetOutput());
+		cone->actor->SetMapper(coneMapper);
+		cone->actor->GetProperty()->SetColor(selectedRGB());
+		mRenderer->AddActor(cone->actor);
 		mRenderer->ResetCamera();
 		updatePosition();
+		shapes.push_back(cone);
 		mRenderWindow->Render();
 	}
 }
 
 void MainWindow::addSphere() {
+	Shape* sphere = new Sphere();
 	NewPtr(sphereSource, vtkSphereSource);
 	NewPtr(sphereMapper, vtkPolyDataMapper);
-	NewPtr(sphereActor, vtkActor);
-
-	unordered_map<string, double> valuesNeeded;
-	valuesNeeded["radius"] = 0;
-	bool valuesAdded = getData(valuesNeeded);
-	if (valuesAdded) {
-		sphereSource->SetRadius(valuesNeeded["radius"]);
+	if (getData(sphere->valuesNeeded)) {
+		sphereSource->SetRadius(*(sphere->valuesNeeded["radius"]));
 		sphereSource->Update();
 		sphereMapper->SetInputConnection(sphereSource->GetOutputPort());
-		sphereActor->SetMapper(sphereMapper);
-		int r, g, b;
-		selectedRGB(r, g, b);
-		sphereActor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
-		mRenderer->AddActor(sphereActor);
+		sphere->actor->SetMapper(sphereMapper);
+		sphere->actor->GetProperty()->SetColor(selectedRGB());
+		mRenderer->AddActor(sphere->actor);
 		mRenderer->ResetCamera();
 		updatePosition();
+		shapes.push_back(sphere);
 		mRenderWindow->Render();
-
 	}
 }
 
 void MainWindow::addCircle() {
+	Shape* circle = new Circle();
 	NewPtr(polygonSource, vtkRegularPolygonSource);
 	NewPtr(mapper, vtkPolyDataMapper);
-	NewPtr(actor, vtkActor);
-
-	unordered_map<string, double> valuesNeeded;
-	valuesNeeded["radius"] = 0;
-	bool valuesAdded = getData(valuesNeeded);
-	if (valuesAdded) {
+	if (getData(circle->valuesNeeded)) {
 		polygonSource->SetNumberOfSides(50);
-		polygonSource->SetRadius(valuesNeeded["radius"]);
+		polygonSource->SetRadius(*(circle->valuesNeeded["radius"]));
 		mapper->SetInputConnection(polygonSource->GetOutputPort());
-		actor->SetMapper(mapper);
-		int r, g, b;
-		selectedRGB(r, g, b);
-		actor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
-		mRenderer->AddActor(actor);
+		circle->actor->SetMapper(mapper);
+		circle->actor->GetProperty()->SetColor(selectedRGB());
+		mRenderer->AddActor(circle->actor);
 		mRenderer->ResetCamera();
+		shapes.push_back(circle);
 		mRenderWindow->Render();
 	}
 }
 
 void MainWindow::addSquare() {
+	Shape* square = new Square();
 	NewPtr(points, vtkPoints);
 	NewPtr(polygon, vtkPolygon);
 	NewPtr(polygons, vtkCellArray);
 	NewPtr(polygonPolyData, vtkPolyData);
 	NewPtr(mapper, vtkPolyDataMapper);
-	NewPtr(actor, vtkActor);
-
-	unordered_map<string, double> valuesNeeded;
-	valuesNeeded["side length"] = 0;
-	bool valuesAdded = getData(valuesNeeded);
-	if (valuesAdded) {
-		double side = valuesNeeded["side length"];
+	if (getData(square->valuesNeeded)) {
+		double side = *(square->valuesNeeded["length"]);
 		points->InsertNextPoint(-side / 2, -side / 2, 0.0);
 		points->InsertNextPoint(side / 2, -side / 2, 0.0);
 		points->InsertNextPoint(side / 2, side / 2, 0.0);
@@ -254,30 +242,23 @@ void MainWindow::addSquare() {
 		polygonPolyData->SetPoints(points);
 		polygonPolyData->SetPolys(polygons);
 		mapper->SetInputData(polygonPolyData);
-		actor->SetMapper(mapper);
-		int r, g, b;
-		selectedRGB(r, g, b);
-		actor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
-		mRenderer->AddActor(actor);
+		square->actor->SetMapper(mapper);
+		square->actor->GetProperty()->SetColor(selectedRGB());
+		mRenderer->AddActor(square->actor);
 		mRenderer->ResetCamera();
 		mRenderWindow->Render();
 	}
 }
 
 void MainWindow::addRectangle() {
+	Shape* rectangle = new MRectangle();
 	NewPtr(points, vtkPoints);
 	NewPtr(polygon, vtkPolygon);
 	NewPtr(polygons, vtkCellArray);
 	NewPtr(polygonPolyData, vtkPolyData);
 	NewPtr(mapper, vtkPolyDataMapper);
-	NewPtr(actor, vtkActor);
-
-	unordered_map<string, double> valuesNeeded;
-	valuesNeeded["length"] = 0;
-	valuesNeeded["width"] = 0;
-	bool valuesAdded = getData(valuesNeeded);
-	if (valuesAdded) {
-		double length = valuesNeeded["length"], width = valuesNeeded["width"];
+	if (getData(rectangle->valuesNeeded)) {
+		double length = *(rectangle->valuesNeeded["length"]), width = *(rectangle->valuesNeeded["width"]);
 		points->InsertNextPoint(-width / 2, -length / 2, 0.0);
 		points->InsertNextPoint(width / 2, -length / 2, 0.0);
 		points->InsertNextPoint(width / 2, length / 2, 0.0);
@@ -290,30 +271,24 @@ void MainWindow::addRectangle() {
 		polygonPolyData->SetPoints(points);
 		polygonPolyData->SetPolys(polygons);
 		mapper->SetInputData(polygonPolyData);
-		actor->SetMapper(mapper);
-		int r, g, b;
-		selectedRGB(r, g, b);
-		actor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
-		mRenderer->AddActor(actor);
+		rectangle->actor->SetMapper(mapper);
+		rectangle->actor->GetProperty()->SetColor(selectedRGB());
+		mRenderer->AddActor(rectangle->actor);
 		mRenderer->ResetCamera();
+		shapes.push_back(rectangle);
 		mRenderWindow->Render();
 	}
 }
 
 void MainWindow::addTriangle() {
+	Shape* triangle = new Triangle();
 	NewPtr(points, vtkPoints);
 	NewPtr(polygon, vtkPolygon);
 	NewPtr(polygons, vtkCellArray);
 	NewPtr(polygonPolyData, vtkPolyData);
 	NewPtr(mapper, vtkPolyDataMapper);
-	NewPtr(actor, vtkActor);
-
-
-	unordered_map<string, double> valuesNeeded;
-	valuesNeeded["side"] = 0;
-	bool valuesAdded = getData(valuesNeeded);
-	if (valuesAdded) {
-		double side = valuesNeeded["side"];
+	if (getData(triangle->valuesNeeded)) {
+		double side = *(triangle->valuesNeeded["length"]);
 
 		points->InsertNextPoint(-side / 2, -side / 2, 0.0);
 		points->InsertNextPoint(0, side / 2, 0.0);
@@ -328,24 +303,23 @@ void MainWindow::addTriangle() {
 		polygonPolyData->SetPoints(points);
 		polygonPolyData->SetPolys(polygons);
 		mapper->SetInputData(polygonPolyData);
-		actor->SetMapper(mapper);
-		int r, g, b;
-		selectedRGB(r, g, b);
-		actor->GetProperty()->SetColor(r / 255., g / 255., b / 255.);
-		mRenderer->AddActor(actor);
+		triangle->actor->SetMapper(mapper);
+		triangle->actor->GetProperty()->SetColor(selectedRGB());
+		mRenderer->AddActor(triangle->actor);
 		mRenderer->ResetCamera();
+		shapes.push_back(triangle);
 		mRenderWindow->Render();
 	}
 }
 
-bool MainWindow::getData(unordered_map<string, double> &dataNeeded) {
+bool MainWindow::getData(map<string, double*> &dataNeeded) {
 	bool ok;
 	for (auto &data : dataNeeded) {
 		string title = "Please enter value of the " + data.first;
 		string label = data.first + ":";
 		double d = QInputDialog::getDouble(this, tr(title.c_str()), tr(label.c_str()), 2, -999, 999, 2, &ok);
 		if (ok)
-			data.second = d;
+			data.second = &d;
 		else
 			return false;
 	}

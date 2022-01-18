@@ -2,14 +2,14 @@
 
 #include <vtkActor.h>
 #include <vtkSmartPointer.h>
-#include <unordered_map>
+#include <map>
+#include <string>
 using namespace std;
 class Shape
 {
 public:
 	vtkSmartPointer<vtkActor> actor;
-	unordered_map<string, double*> valuesNeeded;
+	map<string, double*> valuesNeeded;
 	Shape();
-	~Shape();
 };
 

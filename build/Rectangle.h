@@ -1,8 +1,8 @@
 #pragma once
 #include "Shape.h"
-class Rectangle : public Shape
+class MRectangle : public Shape
 {
 public:
-	Rectangle();
+	MRectangle();
 };
 

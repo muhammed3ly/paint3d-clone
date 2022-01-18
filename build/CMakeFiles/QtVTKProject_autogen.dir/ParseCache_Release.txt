@@ -237,6 +237,14 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h
  mdp:C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgets-config.h
  mdp:C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:C:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qwidget.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Circle.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Cone.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Cube.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Rectangle.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Shape.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Sphere.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Square.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Triangle.h
 D:/workspace/projects/paint3d-clone/paint3d-clone/src/main.cpp
 D:/workspace/projects/paint3d-clone/paint3d-clone/src/MainWindow.cpp
  uic:ui_MainWindow.h
