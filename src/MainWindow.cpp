@@ -147,7 +147,6 @@ void MainWindow::addCube() {
 		cube->SetZLength(valuesNeeded["z"]);
 		cube->Update();
 		cubeMapper->SetInputData(cube->GetOutput());
-		cubeMapper->ScalarVisibilityOff();
 		cubeActor->SetMapper(cubeMapper);
 		int r, g, b;
 		selectedRGB(r, g, b);
