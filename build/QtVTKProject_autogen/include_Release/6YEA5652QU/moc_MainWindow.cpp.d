@@ -7,6 +7,8 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractCellLinks.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractMapper.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractMapper3D.h \
+  C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractPicker.h \
+  C:/Program\ Files/VTK/include/vtk-9.1/vtkAbstractPropPicker.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkActor.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkActorCollection.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkAlgorithm.h \
@@ -65,6 +67,7 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractorObserver.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractorStyle.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractorStyleTrackballActor.h \
+  C:/Program\ Files/VTK/include/vtk-9.1/vtkInteractorStyleTrackballCamera.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkLegacy.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMapper.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMath.h \
@@ -72,6 +75,7 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMathPrivate.hxx \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMatrixUtilities.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkMeta.h \
+  C:/Program\ Files/VTK/include/vtk-9.1/vtkMinimalStandardRandomSequence.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkNamedColors.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkNew.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkOStrStreamWrapper.h \
@@ -93,7 +97,9 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   C:/Program\ Files/VTK/include/vtk-9.1/vtkProp.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkProp3D.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkPropCollection.h \
+  C:/Program\ Files/VTK/include/vtk-9.1/vtkPropPicker.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkProperty.h \
+  C:/Program\ Files/VTK/include/vtk-9.1/vtkRandomSequence.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRect.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRegularPolygonSource.h \
   C:/Program\ Files/VTK/include/vtk-9.1/vtkRenderWindow.h \
@@ -237,6 +243,7 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/build/QtVTKProject_autogen/inc
   D:/workspace/projects/paint3d-clone/paint3d-clone/build/Circle.h \
   D:/workspace/projects/paint3d-clone/paint3d-clone/build/Cone.h \
   D:/workspace/projects/paint3d-clone/paint3d-clone/build/Cube.h \
+  D:/workspace/projects/paint3d-clone/paint3d-clone/build/MouseInteractorHighLightActor.h \
   D:/workspace/projects/paint3d-clone/paint3d-clone/build/Rectangle.h \
   D:/workspace/projects/paint3d-clone/paint3d-clone/build/Shape.h \
   D:/workspace/projects/paint3d-clone/paint3d-clone/build/Sphere.h \

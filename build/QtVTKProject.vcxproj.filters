@@ -27,6 +27,7 @@
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="MouseInteractorHighLightActor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\workspace\projects\paint3d-clone\paint3d-clone\include\MainWindow.h">
@@ -52,6 +53,7 @@
     <ClInclude Include="Square.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Triangle.h" />
+    <ClInclude Include="MouseInteractorHighLightActor.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\CMakeFiles\aceb9520213a5f600b7e73d95f555f73\autouic_(CONFIG).stamp.rule">

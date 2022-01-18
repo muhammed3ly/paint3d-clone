@@ -1,3 +1,13 @@
 ﻿  Automatic MOC and UIC for target QtVTKProject
+  mocs_compilation_Release.cpp
+D:\workspace\projects\paint3d-clone\paint3d-clone\build\MouseInteractorHighLightActor.h(63): error C2352: 'vtkInteractorStyleTrackballActor::OnLeftButtonDown': illegal call of non-static member function
+  C:\Program Files\VTK\include\vtk-9.1\vtkInteractorStyleTrackballActor.h(58): note: see declaration of 'vtkInteractorStyleTrackballActor::OnLeftButtonDown'
   MainWindow.cpp
-  QtVTKProject.vcxproj -> D:\workspace\projects\paint3d-clone\paint3d-clone\build\Release\QtVTKProject.exe
+D:\workspace\projects\paint3d-clone\paint3d-clone\build\MouseInteractorHighLightActor.h(63): error C2352: 'vtkInteractorStyleTrackballActor::OnLeftButtonDown': illegal call of non-static member function
+  C:\Program Files\VTK\include\vtk-9.1\vtkInteractorStyleTrackballActor.h(58): note: see declaration of 'vtkInteractorStyleTrackballActor::OnLeftButtonDown'
+  main.cpp
+D:\workspace\projects\paint3d-clone\paint3d-clone\build\MouseInteractorHighLightActor.h(63): error C2352: 'vtkInteractorStyleTrackballActor::OnLeftButtonDown': illegal call of non-static member function
+  C:\Program Files\VTK\include\vtk-9.1\vtkInteractorStyleTrackballActor.h(58): note: see declaration of 'vtkInteractorStyleTrackballActor::OnLeftButtonDown'
+  MouseInteractorHighLightActor.cpp
+d:\workspace\projects\paint3d-clone\paint3d-clone\build\MouseInteractorHighLightActor.h(63): error C2653: 'vtkInteractorStyleTrackballActor': is not a class or namespace name
+  Generating Code...

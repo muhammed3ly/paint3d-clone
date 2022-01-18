@@ -18,6 +18,7 @@
 #include <vtkPolyDataMapper.h>
 #include <vtkCamera.h>
 #include <vtkProperty.h>
+#include <vtkProp.h>
 #include <vtkSphereSource.h>
 #include <vtkCubeSource.h>
 #include <vtkConeSource.h>
@@ -32,6 +33,8 @@
 #include <Square.h>
 #include <Rectangle.h>
 #include <Triangle.h>
+#include <MouseInteractorHighLightActor.h>
+#include <vector>
 #define NewPtr(obj, class) vtkSmartPointer<class> obj = vtkSmartPointer<class>::New()
 
 using namespace std;
@@ -45,12 +48,13 @@ class MainWindow : public QMainWindow
 
 private:
     Ui::MainWindow *ui;
+	int* selectedActor;
 	vector<Shape*> shapes;
 	static double azimuth, elevation;
 	vtkSmartPointer<vtkGenericOpenGLRenderWindow> mRenderWindow;
 	vtkSmartPointer<vtkRenderer> mRenderer;
 	vtkSmartPointer<QVTKInteractor> mInteractor;
-	vtkSmartPointer<vtkInteractorStyle> mInteractorStyle;
+	vtkSmartPointer<MouseInteractorHighLightActor> mInteractorStyle;
 	void updateColorBox();
 	double* selectedRGB(bool normalize);
 	void updatePosition();
@@ -60,6 +64,7 @@ private:
 	void organizingWindowDependecies();
 	void newSketch();
 	void clearShapesVector();
+	void deleteActor();
 public:
 	void addCube();
 	void addSphere();
@@ -68,7 +73,6 @@ public:
 	void addSquare();
 	void addRectangle();
 	void addTriangle();
-
 	void updateCameraX(double value);
 	void updateCameraY(double value);
 	void updateCameraZ(double value);
@@ -77,6 +81,7 @@ public:
 	bool getData(map<string, double*> &dataNeeded);
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
 };
 
 #endif // MAINWINDOW_H

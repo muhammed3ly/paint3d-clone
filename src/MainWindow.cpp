@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	mRenderWindow(vtkSmartPointer<vtkGenericOpenGLRenderWindow>::New()),
 	mRenderer(vtkSmartPointer<vtkRenderer>::New()),
 	mInteractor(vtkSmartPointer<QVTKInteractor>::New()),
-	mInteractorStyle(vtkSmartPointer<vtkInteractorStyleTrackballActor>::New())
+	mInteractorStyle(MouseInteractorHighLightActor::New())
 {
     ui->setupUi(this);
 	organizingWindowDependecies();
@@ -36,6 +36,7 @@ void MainWindow::InitializeSlotsAndSignals() {
 	QObject::connect(ui->cameraAzimuth, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::updateCameraAzimuth);
 	QObject::connect(ui->cameraElevation, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::updateCameraElevation);
 	QObject::connect(ui->clearSpaceButton, &QPushButton::clicked, this, &MainWindow::newSketch);
+	QObject::connect(ui->deleteActor, &QPushButton::clicked, this, &MainWindow::deleteActor);
 }
 
 void MainWindow::InitializeBackground()
@@ -54,12 +55,18 @@ void MainWindow::InitializeCameraSettings()
 
 void MainWindow::organizingWindowDependecies()
 {
+	selectedActor = new int;
+	*selectedActor = -1;
+	mInteractorStyle->selectedActor = selectedActor;
+	mInteractorStyle->shapes = &shapes;
 	ui->openGLWidget_2->setRenderWindow(mRenderWindow);
 	mRenderWindow->AddRenderer(mRenderer);
+	mInteractorStyle->SetDefaultRenderer(mRenderer);
 	mInteractor->SetRenderWindow(mRenderWindow);
 	mInteractor->SetInteractorStyle(mInteractorStyle);
 	mInteractor->Initialize();
 }
+
 
 void MainWindow::newSketch()
 {
@@ -75,6 +82,16 @@ void MainWindow::clearShapesVector() {
 		delete shapes[i];
 	}
 	shapes.clear();
+}
+
+void MainWindow::deleteActor()
+{
+	if (*selectedActor != -1) {
+		mRenderer->RemoveActor(shapes[*selectedActor]->actor);
+		shapes.erase(shapes.begin() + *selectedActor);
+		*selectedActor = -1;
+		mRenderWindow->Render();
+	}
 }
 
 MainWindow::~MainWindow()
@@ -162,6 +179,8 @@ void MainWindow::addCube() {
 		updatePosition();
 		shapes.push_back(cube);
 		mRenderWindow->Render();
+
+
 	}
 }
 

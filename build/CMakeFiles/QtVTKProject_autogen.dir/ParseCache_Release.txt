@@ -10,6 +10,8 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkAbstractCellLinks.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkAbstractMapper.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkAbstractMapper3D.h
+ mdp:C:/Program Files/VTK/include/vtk-9.1/vtkAbstractPicker.h
+ mdp:C:/Program Files/VTK/include/vtk-9.1/vtkAbstractPropPicker.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkActor.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkActorCollection.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkAlgorithm.h
@@ -75,6 +77,7 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkMathPrivate.hxx
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkMatrixUtilities.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkMeta.h
+ mdp:C:/Program Files/VTK/include/vtk-9.1/vtkMinimalStandardRandomSequence.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkNamedColors.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkNew.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkOStrStreamWrapper.h
@@ -96,7 +99,9 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkProp.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkProp3D.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkPropCollection.h
+ mdp:C:/Program Files/VTK/include/vtk-9.1/vtkPropPicker.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkProperty.h
+ mdp:C:/Program Files/VTK/include/vtk-9.1/vtkRandomSequence.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkRect.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkRegularPolygonSource.h
  mdp:C:/Program Files/VTK/include/vtk-9.1/vtkRenderWindow.h
@@ -240,11 +245,12 @@ D:/workspace/projects/paint3d-clone/paint3d-clone/include/MainWindow.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Circle.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Cone.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Cube.h
+ mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/MouseInteractorHighLightActor.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Rectangle.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Shape.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Sphere.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Square.h
  mdp:D:/workspace/projects/paint3d-clone/paint3d-clone/build/Triangle.h
-D:/workspace/projects/paint3d-clone/paint3d-clone/src/main.cpp
 D:/workspace/projects/paint3d-clone/paint3d-clone/src/MainWindow.cpp
  uic:ui_MainWindow.h
+D:/workspace/projects/paint3d-clone/paint3d-clone/src/main.cpp
