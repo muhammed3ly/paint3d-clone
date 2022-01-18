@@ -1,8 +1,6 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
 
-
-
 double MainWindow::azimuth = 0;
 double MainWindow::elevation = 0;
 MainWindow::MainWindow(QWidget *parent) :

@@ -19,6 +19,14 @@
     <ClCompile Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\mocs_compilation_RelWithDebInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Cone.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Square.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\workspace\projects\paint3d-clone\paint3d-clone\include\MainWindow.h">
@@ -36,6 +44,14 @@
     <ClInclude Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\QtVTKProject_autogen\include_RelWithDebInfo\forms\ui_MainWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="Cone.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\workspace\projects\paint3d-clone\paint3d-clone\build\CMakeFiles\aceb9520213a5f600b7e73d95f555f73\autouic_(CONFIG).stamp.rule">
