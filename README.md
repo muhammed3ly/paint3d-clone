@@ -1,5 +1,5 @@
 # paint3d-clone
- This project is a task i have been given from Medsoft to test my abilities.
+ This project is a side project to learn QT and VTK.
 
 ## Frameworks/Tools used
 - QT 5.15
